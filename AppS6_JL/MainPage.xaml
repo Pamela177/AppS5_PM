@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS6_JL.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="CRUD con Xamarin Forms! - Jairo Lomas" HorizontalTextAlignment="Center" TextColor="Red" FontSize="20"/>
+        </Frame>
+
+          <Label Text="CRUD COMPLETO" FontSize="15" HorizontalTextAlignment="Center"/>
+          
+            <Entry x:Name="txtCodigo" Placeholder="Ingrese el Codigo"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese el Apelido"/>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese la Edad" Keyboard="Numeric"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+           
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Text="Insertar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="Actualizar" x:Name="btnActualizar" Clicked="btnActualizar_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked"/>
+
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
